@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Zoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9DJ-Zy-ZJi">
+                                <rect key="frame" x="0.0" y="84" width="414" height="5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="b0V-wL-DCY">
+                                <rect key="frame" x="20" y="44" width="130.5" height="32.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кольца" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvu-It-MDf">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVG-vZ-CUf">
+                                        <rect key="frame" x="115" y="0.0" width="15.5" height="32.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uD2-xs-R79">
+                                <rect key="frame" x="0.0" y="831" width="414" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AmT-g4-EjC">
+                                <rect key="frame" x="0.0" y="97" width="414" height="726"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jot-sM-Jpd">
+                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <scrollView key="backgroundView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="bOq-Me-srW">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="726"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <viewLayoutGuide key="contentLayoutGuide" id="Gzr-p1-Bx6"/>
+                                    <viewLayoutGuide key="frameLayoutGuide" id="MTS-Oi-gIN"/>
+                                </scrollView>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9DJ-Zy-ZJi" firstAttribute="top" secondItem="b0V-wL-DCY" secondAttribute="bottom" constant="7.5" id="4lW-Rs-wPi"/>
+                            <constraint firstItem="9DJ-Zy-ZJi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8ZH-Hk-0BO"/>
+                            <constraint firstItem="9DJ-Zy-ZJi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="FKK-Da-vEL"/>
+                            <constraint firstItem="AmT-g4-EjC" firstAttribute="top" secondItem="9DJ-Zy-ZJi" secondAttribute="bottom" constant="8" id="KCX-ka-AMX"/>
+                            <constraint firstAttribute="bottom" secondItem="AmT-g4-EjC" secondAttribute="bottom" constant="73" id="WOn-mr-ybR"/>
+                            <constraint firstItem="b0V-wL-DCY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XnB-lP-QLy"/>
+                            <constraint firstItem="9DJ-Zy-ZJi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZMQ-h1-6IR"/>
+                            <constraint firstItem="AmT-g4-EjC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fkL-JC-7nA"/>
+                            <constraint firstItem="AmT-g4-EjC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="hzE-5a-d5h"/>
+                            <constraint firstItem="AmT-g4-EjC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lDi-8v-5aP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="AmT-g4-EjC" id="XME-Ef-gwK"/>
+                        <outlet property="countRingLabel" destination="CVG-vZ-CUf" id="ggT-11-955"/>
+                        <outlet property="titleRingLabel" destination="Pvu-It-MDf" id="rfO-mx-Fei"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
